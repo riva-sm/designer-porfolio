@@ -21,6 +21,34 @@ body {
   font-size: 15px;
   font-weight: 400;
 }
+.separated {
+  background-image: url("../img/border.png");
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+  background-position: center;
+}
+/*=============== SCROLLBAR ===============*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 10px;
+  background: #212529;
+  border-left: 0 solid white;
+  border-right: 0 solid white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3bb78f;
+  width: 0;
+  height: 15%;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
 
 /* ======================= REBOOT ======================= */
 
@@ -286,6 +314,115 @@ img {
 }
 .btn-bar a:hover::after {
   width: 40px;
+}
+
+/*=============== ABOUT ===============*/
+.about-me .img {
+  width: 400px;
+  height: 400px;
+}
+.about-me img {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  position: relative;
+  object-fit: cover;
+  margin-left: -30px;
+}
+.about-me .social-icons {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+}
+
+.about-me .social-icons a {
+  width: 45px;
+  height: 45px;
+  line-height: 41px;
+  background: #0b0b13;
+  border: 2px solid white;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 5px;
+  transition: ease all 0.35s;
+  transform: scale(1);
+  margin-top: -150px;
+}
+.social-icons a:hover {
+  transform: scale(1.1);
+  background: #ff9301;
+  color: white;
+}
+.social-icons a:nth-child(1) {
+  top: -25px;
+}
+.social-icons a:nth-child(2) {
+  top: -8px;
+}
+.social-icons a:nth-child(4) {
+  top: -8px;
+}
+.social-icons a:nth-child(5) {
+  top: -25px;
+}
+.info {
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+  width: 300px;
+  margin-left: 7%;
+}
+.info p {
+  margin: 0;
+  font-size: 16px;
+}
+.info h3 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.title h3 {
+  margin: 0;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+.about-info .title h3 {
+  margin-bottom: 40px;
+}
+.title h3:after {
+  content: "";
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ffc107;
+  position: absolute;
+  top: -8px;
+  left: -15px;
+  z-index: -1;
+}
+.about-info p {
+  margin-bottom: 1rem;
+}
+
+.info-list {
+  padding-top: 15px;
+}
+.info-list li {
+  padding: 4px 0;
+}
+.info-list label {
+  color: white;
+  margin: 0;
+  font-weight: 400;
+  padding-right: 10px;
 }
 
 /*=============== RESPONSIVE ===============*/
